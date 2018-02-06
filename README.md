@@ -58,3 +58,13 @@ PORT    STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 0.28 seconds
 ```
+
+## Common Ports
+
+| Port  | Server | Description                   |
+| :---: | ------ | ----------------------------- |
+| 3306  | mysqld | mysql server                  |
+| 3307  | mysqld | mysql server (TLS)            |
+| 27017 | mongod | default mongod instances.     |
+| 27018 | mongod | when running with --shardsvr  |
+| 27019 | mongod | when running with --configsvr |
