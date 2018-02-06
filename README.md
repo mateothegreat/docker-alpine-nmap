@@ -61,10 +61,15 @@ Nmap done: 1 IP address (1 host up) scanned in 0.28 seconds
 
 ## Common Ports
 
-| Port  | Server | Description                   |
-| :---: | ------ | ----------------------------- |
-| 3306  | mysqld | mysql server                  |
-| 3307  | mysqld | mysql server (TLS)            |
-| 27017 | mongod | default mongod instances.     |
-| 27018 | mongod | when running with --shardsvr  |
-| 27019 | mongod | when running with --configsvr |
+| Port  | Server | Protocol | Description                          |
+| :---: | ------ | :------: | ------------------------------------ |
+|  22   | sshd   |   TCP    | Secure Shell (SSH)                   |
+|  25   | SMTP   |   TCP    | Simple Mail Transfer Protocol (SMTP) |
+|  53   | named  | TCP/UDP  | Domain Name System (DNS)             |
+| 3306  | mysqld |   TCP    | mysql server                         |
+| 3307  | mysqld |   TCP    | mysql server (TLS)                   |
+| 27017 | mongod |   TCP    | default mongod instances.            |
+| 27018 | mongod |   TCP    | when running with --shardsvr         |
+| 27019 | mongod |   TCP    | when running with --configsvr        |
+
+http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml
